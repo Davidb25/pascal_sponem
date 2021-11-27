@@ -1,0 +1,154 @@
+/* Tuto pour slider images avec transition automatique ou manuel */
+/* https://www.youtube.com/watch?v=REOWRuPpxQE */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*, ::before, ::after {
+    margin:0;
+    padding: 0px;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: #f1f1f1;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    max-height: 100vh;
+}
+
+.top {
+    height: 60px;
+    width: 100%;
+    /*background:rgb(231, 230, 230);*/
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.logo {
+    display: flex;
+}
+
+.top img {
+margin-left: 10px;
+}
+
+.top h1 {
+    height: 50px;
+    margin-left: 10px;
+    color:rgba(241, 81, 18, 0.671);
+    font-size: 1.8rem;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    /*border: solid 1px red;*/
+    width: 100%;
+    justify-content: space-between;
+}
+
+li {
+    list-style: none;
+    display:flex;
+    flex-wrap: wrap;
+    padding: 0 13px;
+}
+
+li a {
+   color: black;
+}
+
+
+
+/*----------- slider ---------*/
+
+
+.container_slider {
+    max-width: 61%;
+    margin: 0 auto;
+    padding: 10px;  
+}
+
+
+
+.slider img { 
+    max-width: 100%;
+    object-fit: cover;
+    display: none;
+}
+
+img.active { /*quand image possede la classe active*/
+    display:block;
+    animation: fade 2s;
+    box-shadow: 10px 10px 10px rgb(167, 166, 166);
+}
+
+
+.container-button{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn_nav_left,
+.btn_nav_right {
+    cursor: pointer;
+    height: 40px;
+    padding: 5px 20px;
+    opacity: 0.5;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }    
+}
+
+
+
+
+
+
+
+/* media querys*/
+@media (max-width: 960px){
+
+
+    .top h1{
+        margin-left: 10px;
+        color:rgba(138, 135, 135, 0.671);
+        font-size: 1.6rem;
+    }
+
+}
+
+
+
+
+@media (max-width: 400px){
+
+
+    .top h1{
+        margin-left: 10px;
+        color:rgba(138, 135, 135, 0.671);
+        font-size: 0.8rem;
+    }
+}
+
+
+
+    
+
+
+
