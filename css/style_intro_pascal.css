@@ -307,15 +307,18 @@ ol,ul {
 
 @media screen and (max-width: 800px) { 
     body{
-        background:rgb(138, 138, 138)
+        background:rgb(197, 197, 197)
+
     }
     .cb-slideshow .citation h3 {
+        text-shadow: none;
         font-size: 30px;
+
     }
 
     .cb-slideshow .adress h3 {
         font-size: 30px;
-        color: rgb(56, 56, 58)
+        color: rgb(132, 132, 133)
     }
 
     .cb-slideshow li .adress {
