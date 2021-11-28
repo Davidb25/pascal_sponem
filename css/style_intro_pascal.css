@@ -313,6 +313,7 @@ ol,ul {
     .cb-slideshow .citation h3 {
         text-shadow: none;
         font-size: 30px;
+        text-shadow: 1px 1px 2px rgb(85, 85, 85);
 
     }
 
@@ -333,6 +334,7 @@ ol,ul {
  
     .cb-slideshow .citation h3 {
         font-size: 30px;
+        text-shadow: 1px 1px 2px rgb(85, 85, 85);
     }
 
     .cb-slideshow .adress h3 {
